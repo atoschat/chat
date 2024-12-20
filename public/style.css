@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('a.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+nav {
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #4CAF50;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-image: url(c.jpg);
+}
+
+.button {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-b {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-o {
+    background-color: #FFFFFF;
+    padding: 10px 40px;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    list-style: none;
+}
+
+.nav-o:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333333;
+    font-weight: 500;
+}
+a:focus{
+    border-bottom: 2px solid black;
+}
+#open {
+    display: none;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px black;
+    outline: none;
+    display: none;
+}
+
+ #login{
+color: white;
+    backdrop-filter: blur(50px);
+border: none;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    border-radius: 20px;
+    padding: 50px;
+    height: 300px;
+    box-shadow: 2px 2px 40px white;
+     }
+     label{
+        font-size: larger;
+        margin-left: 10px;
+    }
+    .hide{
+        display: none;
+    }
+ input{
+    margin: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding:10px 20px;
+    border-bottom: 2px solid white;
+    color: white;
+    transition: 0.1s;
+ }
+ input:focus{
+    border: none;
+    border-left: 2px solid white;
+ }
+ input[type=submit]{
+    border: 2px solid white;
+    box-shadow: 2px 2px 40px white;
+    border-radius: 10px;
+ }
+ input[type=submit]:hover{
+    scale: 1.1;
+    cursor: pointer;
+ }
+
+h4{
+     color: white;
+     font-size: smaller;
+     
+}
+/* MESSAGE BOX CODES */
+.msg-box{
+
+    background-color: transparent;
+    backdrop-filter: blur(70px);
+    border-radius: 15px;
+    box-shadow: 2px 2px 40px white;
+    height: 500px;
+     width: 800px;
+     border: 2px solid white;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     background-image: url(b.jpg);
+}
+.user{
+    padding: 5px;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+#active-users{
+    padding: 2px 20px;
+    border: 0.5px solid white;
+    box-shadow: 2px 2px 40px white;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    width: auto;
+    backdrop-filter: blur(5px);
+}
+/* scrollbar  */
+
+/* Add this style for cute scrollbar */
+.msg-s::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+.msg-s::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+  
+.msg-s::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+/* scrollbar end    */
+.msg-s{
+    
+    display: flex;
+    flex-direction: column-reverse;
+    height: 70%;
+    overflow-y: auto;
+}
+.msg{
+    margin: 5px 10px;
+    color: white;
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+}
+.msg-p{
+    border-top: 2px solid white;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+#send-m{
+    backdrop-filter: blur(20px);
+    width: 80%;
+    color: white;
+
+}
+#send{
+    backdrop-filter: blur(100px);
+    color: white;
+}
+@media (max-width: 700px) {
+    button{
+        display: block;
+    }
+    nav {
+        padding: 10px;
+    }
+
+    .button {
+        display: block;
+    }
+
+    .nav-b {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 250px;
+        height: 100vh;
+        background-color: #4CAF50;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        transition: all 0.4s ease-in-out;
+        padding: 20px 40px;
+        border: 3px solid white;
+        border-radius: 30px;
+    }
+
+    .nav-o {
+        margin: 10px 0;
+    }
+    #open:checked ~ .nav-b {
+        right: 0;
+    }
+
+    #open:checked ~ nav {
+        box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.2);
+    }
+    .trans{
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+    }
+}
